@@ -1,39 +1,62 @@
-const fonts = ['Poppins', 'Bebas Neue', 'IBM Plex Mono', 'Lexend Mega', 'Inter'];
+const colors = ["#3DC39B", "#928CF8", "#FCC526", "#FE74A6", "#5B6DFF"];
+const fonts = ['Poppins', 'Bebas Neue', 'IBM Plex Mono', 'Lexend Mega', 'Inter', 'Playfair Display'];
+const fontStyles = ['normal', 'italic']
+const fontWeight = [100, 200, 300, 400, 500, 600, 700, 800, 900]
+const textTransform = ['uppercase', 'lowercase']
+const chars = [];
+
+for (let i = 1; i <= 12; i++) {
+    chars.push(document.getElementById(`char${i}`));
+}
+const highlight = document.getElementById('highlighter');
 
 // For generate Index Random with arr parameter
 function iRandom(arr){
     return Math.floor(Math.random() * arr.length)
 }
 
-function changeFont() {
-    const char1 = document.getElementById('char1');
-    const char2 = document.getElementById('char2');
-    const char3 = document.getElementById('char3');
-    const char4 = document.getElementById('char4');
-    const char5 = document.getElementById('char5');
-    const char6 = document.getElementById('char6');
-    const char7 = document.getElementById('char7');
-    const char8 = document.getElementById('char8');
-    const char9 = document.getElementById('char9');
-    const char10 = document.getElementById('char10');
-    const char11 = document.getElementById('char11');
-    const char12 = document.getElementById('char12');
+function changeFont(){
+    // Random with Min and Max value
+    function timerRandom(min, max){
+        return Math.floor(Math.random() * (max - min + 1)) + min
+    }
 
-    char1.style.fontFamily = fonts[2];
-    console.log('Hallo')
-    setInterval(() => char1.style.fontFamily = fonts[iRandom(fonts)], 5000);
+    function setFontStyles(char){
+        chars[char].style.fontFamily = fonts[iRandom(fonts)]
+        chars[char].style.fontStyle = fontStyles[iRandom(fontStyles)]
+        chars[char].style.fontWeight = fontWeight[iRandom(fontWeight)]
+        chars[char].style.textTransform = textTransform[iRandom(textTransform)]
+    }
+
+    // Change font family style
+    function changes(char, timer=500) {
+        setInterval(
+            function (){
+                chars[char].style.fontFamily = fonts[iRandom(fonts)]
+                chars[char].style.fontStyle = fontStyles[iRandom(fontStyles)]
+                chars[char].style.fontWeight = fontWeight[iRandom(fontWeight)]
+                chars[char].style.textTransform = textTransform[iRandom(textTransform)]
+            },
+            timer
+        );
+    }
+
+    // Initiate First Color
+    for (let i=0; i<chars.length; i++){
+        setFontStyles(i);
+    }
+
+    for (let i=0; i<chars.length; i++){
+        changes(i, timerRandom(15000, 30000));
+    }
 }
 
-function changeColor() {
-    const colors = ["#3DC39B", "#928CF8", "#FCC526", "#FE74A6", "#5B6DFF"];
-    const highlight = document.getElementById('highlighter');
-    
+function changeColor() { 
     // Initiate First Color
     highlight.style.backgroundColor = colors[iRandom(colors)];
     
-    // Change color every 3 seconds
-    setInterval(() => highlight.style.backgroundColor = colors[iRandom(colors)], 3000);
+    // Change color every 5 seconds
+    setInterval(() => highlight.style.backgroundColor = colors[iRandom(colors)], 5000);
 }
 
-window.onload = changeColor() || changeFont();
-// window.onload = changeFont;
+window.onload = changeFont() || changeColor();

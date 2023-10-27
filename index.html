@@ -12,30 +12,34 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
     <body>
         <div class="h-screen flex justify-center items-center flex-col">
-            <div class="mx-8 sm:mx-8 md:mx-8 lg:mx-20 h-fit flex justify-center flex-col items-center gap-4">
-                <div class='tracking-[-.35em] text-center sm:tracking-[-.35em] lg:text-left'>
-                    <span id="char1" class="text-[#1D1D1D] text-7xl sm:text-9xl font-[Poppins] font-bold">H</span>
-                    <span id="char2" class="text-[#1D1D1D] text-7xl sm:text-9xl font-['Bebas_Neue'] font-normal">o</span>
-                    <span id="char3" class="text-[#1D1D1D] text-7xl sm:text-9xl font-['IBM_Plex_Mono'] font-light">L</span>
-                    <span id="char4" class="text-[#1D1D1D] text-7xl sm:text-9xl font-[Poppins] font-semibold italic">L</span>
-                    <span id="char5" class="text-[#1D1D1D] text-7xl sm:text-9xl font-[Poppins] font-light">a </span>
-                    <div id="highlighter" class="sm:inline-block px-2">
-                        <span id="char6" class="text-[#1D1D1D] text-7xl sm:text-9xl font-[Poppins] font-bold">W</span>
-                        <span id="char7" class="text-[#1D1D1D] text-7xl sm:text-9xl font-['Lexend_Mega'] font-light">E</span>
-                        <span id="char8" class="text-[#1D1D1D] text-7xl sm:text-9xl font-[Inter] font-normal italic tracking-thight">I</span>
-                        <span id="char9" class="text-[#1D1D1D] text-7xl sm:text-9xl font-['Bebas_Neue'] font-normal">&nbsp;r</span>
-                        <span id="char10" class="text-[#1D1D1D] text-7xl sm:text-9xl font-['IBM_Plex_Mono'] font-medium">D</span>
-                        <span id="char11" class="text-[#1D1D1D] text-7xl sm:text-9xl font-['Bebas_Neue'] font-medium">o</span>
-                        <span id="char12" class="text-[#1D1D1D] text-7xl sm:text-9xl font-['Bebas_Neue'] font-medium">.</spa>
+            <div class="flex flex-col gap-4 h-fit w-full">
+                <div class='w-full flex flex-col justify-center md:gap-4 md:flex-row lg:gap-6'>
+                    <div class="flex flex-row self-center">
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char1">H</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char2">o</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char3">L</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char4">L</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char5">a </span>
+                    </div>
+                    <div class="px-2 w-fit flex flex-row self-center" id="highlighter">
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char6">W</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char7">E</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char8">I</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char9">r</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char10">D</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char11">o</span>
+                        <span class="text-[#1D1D1D] text-7xl md:text-8xl lg:text-9xl" id="char12">.</span>
                     </div>
                 </div>
 
-                <div class="flex mx-[0px] sm:mx-[50px] lg:mx-[300px] flex-col gap-4">
+                <div class="flex flex-col self-center gap-4 w-[22rem] sm:w-[32rem] md:w-[40rem] lg:w-[60rem]">
                     <p class="font-[Archivo] hidden sm:block sm:text-xl text-justify sm:text-left">
                         My name is <span class="italic">Muhammad Tharreq</span>, and I am a Computer Engineering student with a keen interest in the field of graphic design. I am highly enthusiastic about staying up to date with the latest trends in design and technology. I have prior experience as a committee member and have been actively involved in various organizations before.
                     </p>
