@@ -10,13 +10,13 @@ for (let i = 1; i <= 12; i++) {
 }
 const highlight = document.getElementById('highlighter');
 
-// For generate Index Random with arr parameter
+// **For generate Index Random with arr parameter
 function iRandom(arr){
     return Math.floor(Math.random() * arr.length)
 }
 
 function changeFont(){
-    // Random with Min and Max value
+    // **Random with Min and Max value
     function timerRandom(min, max){
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
@@ -28,7 +28,7 @@ function changeFont(){
         chars[char].style.textTransform = textTransform[iRandom(textTransform)]
     }
 
-    // Change font family style
+    // **Change font family style
     function changes(char, timer=500) {
         setInterval(
             function (){
@@ -41,21 +41,22 @@ function changeFont(){
         );
     }
 
-    // Initiate First Color
+    // **Initiate First Color
     for (let i=0; i<chars.length; i++){
         setFontStyles(i);
     }
 
+    // **Change Font Style for 15-30s
     for (let i=0; i<chars.length; i++){
         changes(i, timerRandom(15000, 30000));
     }
 }
 
 function changeColor() { 
-    // Initiate First Color
+    // **Initiate First Color
     highlight.style.backgroundColor = colors[iRandom(colors)];
     
-    // Change color every 5 seconds
+    // **Change color every 5 seconds
     setInterval(() => highlight.style.backgroundColor = colors[iRandom(colors)], 5000);
 }
 
