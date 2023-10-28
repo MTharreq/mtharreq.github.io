@@ -1,0 +1,23 @@
+const listTitle = [
+    'Holla Weirdo.',
+    'Hello World',
+    'Resaa Jelek',
+    'Goofy Grins',
+    'Keren Banget',
+    'Halo Ganteng',
+    'Hello Girls.',
+    'Lo Keren',
+    'Foolish Fun',
+    'Epic Blunder',
+    'Silly Mishap',
+    'Jokes Abound',
+    'Roar Laughter',
+    'Masa Sih?',
+    'Haah Brodies',
+    'Looo Brodies',
+    'Wasup Brodies',
+    'Gweh Ganteng',
+    '1101 1100010',
+    'Looh Bauuu',
+    'Lo Jelek'
+]

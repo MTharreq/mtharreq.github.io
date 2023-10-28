@@ -1,17 +1,40 @@
 // Define variables
+const title = listTitle[iRandom(listTitle)]
 const colors = ["#3DC39B", "#928CF8", "#FCC526", "#FE74A6", "#5B6DFF"];
 const fonts = ['Poppins', 'Bebas Neue', 'IBM Plex Mono', 'Lexend Mega', 'Inter', 'Playfair Display'];
 const fontStyles = ['normal', 'italic'];
 const fontWeight = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-const textTransform = ['uppercase', 'lowercase', 'capitalize'];
+const textTransform = ['uppercase', 'lowercase', 'lowercase', 'capitalize'];
 const elements = [];
 
 // Get elements by Ids from HTML and push them into the elements array
-for (let i = 1; i <= 12; i++) {
-    elements.push(document.getElementById(`char${i}`));
-}
 for (let i = 1; i <= 3; i++) {
     elements.push(document.getElementById(`word${i}`));
+}
+
+function addChar(text, newId, idContainer){
+    const newSpan = document.createElement("span");
+    newSpan.className = "text-req-black text-7xl md:text-8xl lg:text-9xl";
+    newSpan.textContent = text;
+    newSpan.id = `char${newId}`;
+    document.querySelector(`#${idContainer}`).appendChild(newSpan);
+}
+
+function generateTitle() {
+    titleArr = title.split(' ');
+    const firstTitle = titleArr[0].split('');
+    const lastTitle = titleArr[1].split('');
+    const totalLenght = firstTitle.length + lastTitle.length
+    
+    firstTitle.forEach((char, i) => {
+        addChar(char, i+1, 'first-title');
+    })
+    lastTitle.forEach((char, i) => {
+        addChar(char, i+1+firstTitle.length, 'highlighter');
+    })
+    for (let i = 1; i <= totalLenght; i++) {
+        elements.push(document.getElementById(`char${i}`));
+    }
 }
 
 // Function to generate a random index from an array
@@ -49,6 +72,7 @@ function changeColor() {
 
 // Initialize everything
 function initialize() {
+    generateTitle();
     changeStyles();
     changeColor();
 }
