@@ -14,8 +14,6 @@ for (let i = 1; i <= 3; i++) {
     elements.push(document.getElementById(`word${i}`));
 }
 
-console.log(elements)
-
 // Function to generate a random index from an array
 function iRandom(arr) {
     return Math.floor(Math.random() * arr.length);
