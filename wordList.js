@@ -2,17 +2,16 @@ const listTitle = [
     // A
     'AWOKW AWOKW',
     // B
-    'Baik Pak!',
+    'Baik Baik',
     // C
     // D
     // E
     // F
     // G
     'Gweh Banget',
-    'Gweh Ganteng',
+    'Gweh Gantenk',
     'Gweh Keren',
     // H
-    'Haah Brodies',
     "Ha'aa Laah",
     'Halo Cantik',
     'Halo Ganteng',
@@ -32,6 +31,7 @@ const listTitle = [
     'Looo Keren',
     'Lo Jelek',
     'Lo Keren',
+    'Lucu Gak?',
     "Luuh Keren",
     // M
     'Maaf Laah',
@@ -46,7 +46,6 @@ const listTitle = [
     'Reqq Reqq',
     'Resaa Jelek',
     'Resaa Cantik',
-    'Resaa Keren:',
     'Resaa Aneh!!',
     // S
     'Siap Pak!!',
