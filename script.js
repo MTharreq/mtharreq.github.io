@@ -12,6 +12,12 @@ for (let i = 1; i <= 3; i++) {
     elements.push(document.getElementById(`word${i}`));
 }
 
+function copyText(id) {
+    const copyText = document.getElementById(id).textContent
+    navigator.clipboard.writeText(copyText)
+    alert('Hex ' + copyText + ' copied')
+}
+
 function addChar(text, newId, idContainer){
     const newSpan = document.createElement("span");
     newSpan.className = "text-req-black text-7xl md:text-8xl lg:text-9xl";
@@ -64,9 +70,9 @@ function changeStyles() {
 }
 
 // Function to change background color randomly
-function changeColor() {
-    const highlight = document.getElementById('highlighter');
-    setInterval(() => highlight.style.backgroundColor = colors[iRandom(colors)], 5000);
+function changeColor(idName, setTime) {
+    const highlight = document.getElementById(idName);
+    setInterval(() => highlight.style.backgroundColor = colors[iRandom(colors)], setTime);
     highlight.style.backgroundColor = colors[iRandom(colors)];
 }
 
@@ -74,7 +80,11 @@ function changeColor() {
 function initialize() {
     generateTitle();
     changeStyles();
-    changeColor();
+    changeColor('highlighter', 5000);
+    changeColor('projectHeading', 60000);
+    changeColor('projectColor1', 60000);
+    changeColor('projectColor2', 60000);
+    changeColor('projectColor3', 60000);
 }
 
 // Call initialize when the window has loaded
