@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col self-center gap-4 w-[20rem] sm:w-[32rem] md:w-[40rem] lg:w-[60rem]">
+                <div class="flex flex-col self-center gap-4 px-8 sm:px-20 md:px-16 lg:w-[60rem]">
                     <p class="font-archivo hidden sm:block sm:text-xl text-justify sm:text-left">
                         My name is <span class="italic">Muhammad Tharreq</span>, and I am a Computer Engineering student with a keen interest in the field of graphic design. I am highly enthusiastic about staying up to date with the latest trends in design and technology. I have prior experience as a committee member and have been actively involved in various organizations before.
                     </p>
@@ -142,112 +142,147 @@
         </section>
 
         <!-- SELECTED PROJECTS -->
-        <section class="flex flex-col gap-2 px-4 py-20">
+        <section class="flex flex-col gap-2 py-20 px-4 md:px-10lg:px-10 xl:px-40 lg:gap-6 lg:py-40">
             <!-- TITLE -->
-            <div class="flex flex-col gap-2">
-                <div class="border-4 border-req-black pt-2 pb-1.5 font-bebas text-3xl text-center" id="projectHeading">
-                    Selected Projects
-                </div>
+            <div class="w-full self-center border-4 border-req-black pt-2 pb-1.5 font-bebas text-3xl text-center lg:text-6xl lg:pt-4 lg:border-[6px]" id="projectHeading">
+                Selected Projects
             </div>
 
-            <!-- PROJECT 1 -->
-            <div class="flex flex-row gap-2 h-[200px] w-full">
-                <!-- Photos -->
-                <div class="w-full bg-cover bg-center">
-                    <div style="background-image: url(./project1.png)" class="h-full bg-cover bg-inherit border-4 border-req-black pt-2 pb-1.5 px-2"></div>
-                </div>
-                <!-- Desc -->
-                <div class="w-full flex flex-col" id="projectColor1">
-                    <div class="h-full bg-inherit border-4 border-req-black pt-2 pb-1.5 px-2">
-                        <h1 class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1">
-                            Title ini sangat panjang banget nih anjay
-                        </h1>
-                        <p class="font-archivo text-sm text-left leading-tight line-clamp-5">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, harum labore nulla aspernatur, aliquid inventore voluptatum quae tenetur, mollitia vel ullam odit quos fuga!
-                        </p>
+            <!-- PROJECTS -->
+            <div class="grid grid-cols-1 gap-2 xl:grid-cols-2 lg:gap-6">
+                <!-- PROJECT 1 -->
+                <div class="flex gap-2 lg:gap-6">
+                    <!-- Image -->
+                    <div class="w-full">
+                        <div style="background-image: url(./project1.png)" class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"></div>
                     </div>
-                    <div class="h-2 bg-white"></div>
-                    <div class="h-[40px] border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center">
-                        <p class="pt-1">
-                            More
-                        </p>
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_382_616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-                                    <rect width="12" height="12" fill="#D9D9D9"/>
-                                </mask>
-                                <g mask="url(#mask0_382_616)">
-                                    <path d="M8.0875 6.5H2V5.5H8.0875L5.2875 2.7L6 2L10 6L6 10L5.2875 9.3L8.0875 6.5Z" fill="#1D1D1D"/>
-                                </g>
-                            </svg>
+                    <!-- Desc -->
+                    <div class="w-full flex flex-col" id="projectColor1">
+                        <div class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]">
+                            <h1 class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl">
+                                Title ini sangat panjang banget nih anjay
+                            </h1>
+                            <p class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, harum labore nulla aspernatur, aliquid inventore voluptatum quae tenetur, mollitia vel ullam odit quos fuga!
+                            </p>
+                        </div>
+                        <div class="h-4 bg-white lg:h-6"></div>
+                        <div class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]">
+                            <p class="pt-1">
+                                More
+                            </p>
+                            <div class="w-7">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_382_616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                        <rect width="12" height="12" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_382_616)">
+                                        <path d="M8.0875 6.5H2V5.5H8.0875L5.2875 2.7L6 2L10 6L6 10L5.2875 9.3L8.0875 6.5Z" fill="#1D1D1D"/>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- PROJECT 2 -->
-            <div class="flex flex-row gap-2 h-[200px] w-full">
-                <!-- Desc -->
-                <div class="w-full flex flex-col" id="projectColor2">
-                    <div class="h-full bg-inherit border-4 border-req-black pt-2 pb-1.5 px-2">
-                        <h1 class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1">
-                            Title ini sangat panjang banget nih anjay
-                        </h1>
-                        <p class="font-archivo text-sm text-left leading-tight line-clamp-5">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, harum labore nulla aspernatur, aliquid inventore voluptatum quae tenetur, mollitia vel ullam odit quos fuga!
-                        </p>
+                <!-- PROJECT 2 -->
+                <div class="flex gap-2 lg:gap-6">
+                    <!-- Image -->
+                    <div class="w-full order-last lg:order-first">
+                        <div style="background-image: url(./project2.png)" class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"></div>
                     </div>
-                    <div class="h-2 bg-white"></div>
-                    <div class="h-[40px] border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center">
-                        <p class="pt-1">
-                            More
-                        </p>
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_382_616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-                                    <rect width="12" height="12" fill="#D9D9D9"/>
-                                </mask>
-                                <g mask="url(#mask0_382_616)">
-                                    <path d="M8.0875 6.5H2V5.5H8.0875L5.2875 2.7L6 2L10 6L6 10L5.2875 9.3L8.0875 6.5Z" fill="#1D1D1D"/>
-                                </g>
-                            </svg>
+                        <!-- Desc -->
+                    <div class="w-full flex flex-col" id="projectColor2">
+                        <div class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]">
+                            <h1 class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl">
+                                Title ini sangat panjang banget nih anjay
+                            </h1>
+                            <p class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, harum labore nulla aspernatur, aliquid inventore voluptatum quae tenetur, mollitia vel ullam odit quos fuga!
+                            </p>
+                        </div>
+                        <div class="h-4 bg-white lg:h-6"></div>
+                        <div class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]">
+                            <p class="pt-1">
+                                More
+                            </p>
+                            <div class="w-7">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_382_616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                        <rect width="12" height="12" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_382_616)">
+                                        <path d="M8.0875 6.5H2V5.5H8.0875L5.2875 2.7L6 2L10 6L6 10L5.2875 9.3L8.0875 6.5Z" fill="#1D1D1D"/>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Photos -->
-                <div class="w-full bg-cover bg-center">
-                    <div style="background-image: url(./project2.png)" class="h-full bg-cover bg-inherit border-4 border-req-black pt-2 pb-1.5 px-2"></div>
-                </div>
-            </div>
-            <!-- PROJECT 3 -->
-            <div class="flex flex-row gap-2 h-[200px] w-full">
-                <!-- Photos -->
-                <div class="w-full bg-cover bg-center">
-                    <div style="background-image: url(./project3.png)" class="h-full bg-cover bg-inherit border-4 border-req-black pt-2 pb-1.5 px-2"></div>
-                </div>
-                <!-- Desc -->
-                <div class="w-full flex flex-col" id="projectColor3">
-                    <div class="h-full bg-inherit border-4 border-req-black pt-2 pb-1.5 px-2">
-                        <h1 class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1">
-                            Title ini sangat panjang banget nih anjay
-                        </h1>
-                        <p class="font-archivo text-sm text-left leading-tight line-clamp-5">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, harum labore nulla aspernatur, aliquid inventore voluptatum quae tenetur, mollitia vel ullam odit quos fuga!
-                        </p>
+                <!-- PROJECT 3 -->
+                <div class="flex gap-2 lg:gap-6">
+                    <!-- Image -->
+                    <div class="w-full">
+                        <div style="background-image: url(./project3.png)" class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"></div>
                     </div>
-                    <div class="h-2 bg-white"></div>
-                    <div class="h-[40px] border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center">
-                        <p class="pt-1">
-                            More
-                        </p>
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_382_616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-                                    <rect width="12" height="12" fill="#D9D9D9"/>
-                                </mask>
-                                <g mask="url(#mask0_382_616)">
-                                    <path d="M8.0875 6.5H2V5.5H8.0875L5.2875 2.7L6 2L10 6L6 10L5.2875 9.3L8.0875 6.5Z" fill="#1D1D1D"/>
-                                </g>
-                            </svg>
+                    <!-- Desc -->
+                    <div class="w-full flex flex-col" id="projectColor3">
+                        <div class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]">
+                            <h1 class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl">
+                                Title ini sangat panjang banget nih anjay
+                            </h1>
+                            <p class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, harum labore nulla aspernatur, aliquid inventore voluptatum quae tenetur, mollitia vel ullam odit quos fuga!
+                            </p>
+                        </div>
+                        <div class="h-4 bg-white lg:h-6"></div>
+                        <div class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]">
+                            <p class="pt-1">
+                                More
+                            </p>
+                            <div class="w-7">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_382_616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                        <rect width="12" height="12" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_382_616)">
+                                        <path d="M8.0875 6.5H2V5.5H8.0875L5.2875 2.7L6 2L10 6L6 10L5.2875 9.3L8.0875 6.5Z" fill="#1D1D1D"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT 4 -->
+                <div class="flex gap-2 lg:gap-6">
+                    <!-- Image -->
+                    <div class="w-full order-last lg:order-first">
+                        <div style="background-image: url(./project4.png)" class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"></div>
+                    </div>
+                        <!-- Desc -->
+                    <div class="w-full flex flex-col" id="projectColor4">
+                        <div class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]">
+                            <h1 class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl">
+                                Title ini sangat panjang banget nih anjay
+                            </h1>
+                            <p class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, harum labore nulla aspernatur, aliquid inventore voluptatum quae tenetur, mollitia vel ullam odit quos fuga!
+                            </p>
+                        </div>
+                        <div class="h-4 bg-white lg:h-6"></div>
+                        <div class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]">
+                            <p class="pt-1">
+                                More
+                            </p>
+                            <div class="w-7">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_382_616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                        <rect width="12" height="12" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_382_616)">
+                                        <path d="M8.0875 6.5H2V5.5H8.0875L5.2875 2.7L6 2L10 6L6 10L5.2875 9.3L8.0875 6.5Z" fill="#1D1D1D"/>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -85,6 +85,7 @@ function initialize() {
     changeColor('projectColor1', 60000);
     changeColor('projectColor2', 60000);
     changeColor('projectColor3', 60000);
+    changeColor('projectColor4', 60000);
 }
 
 // Call initialize when the window has loaded
