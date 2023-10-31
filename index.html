@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,9 +19,9 @@
 </head>
     <body>
         <!-- NAVBAR -->
-        <nav class="flex py-4 px-8">
+        <nav class="flex justify-between py-4 px-4 lg:py-4 lg:px-8">
             <!-- icons -->
-            <div class="w-[64px]">
+            <div class="w-[32px] lg:w-[64px]">
                 <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M50.55 31.4266C49.8686 31.3879 49.5992 30.523 50.1458 30.1162C53.0915 27.9255 60.8405 23.8401 74.8824 27.1197C88.7895 30.3685 92.7327 38.6681 93.8389 42.6351C94.0306 43.3199 93.2379 43.8476 92.6783 43.4074C88.7066 40.2848 76.7089 32.9145 50.55 31.4266Z" fill="#1D1D1D"/>
                     <path d="M9.27895 28.003C15.1689 24.5997 29.3297 18.4801 51.7058 21.2137C52.9696 21.3682 53.8704 20.0186 53.1931 18.9574C50.8015 15.2211 44.7755 8.96751 31.6061 10.1454C15.7275 11.5672 9.51636 18.748 7.07591 26.2516C6.65346 27.5565 8.07793 28.6967 9.27895 28.003Z" fill="#1D1D1D"/>
@@ -31,8 +31,19 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8422 62.235C15.6765 60.8958 17.4385 60.4866 18.7777 61.3209C32.0803 69.609 47.6777 70.9035 60.1734 70.0289C66.3922 69.5936 71.7632 68.6263 75.5745 67.7686C77.4783 67.3402 78.9875 66.9404 80.0127 66.6503C80.5252 66.5053 80.9163 66.3878 81.1748 66.3081C81.304 66.2683 81.4001 66.2379 81.4615 66.2182C81.4923 66.2083 81.5143 66.2012 81.5276 66.1968L81.5406 66.1926C81.541 66.1924 81.5414 66.1923 81.5417 66.1922M81.5417 66.1922C83.039 65.696 84.6551 66.5071 85.152 68.0043C85.6489 69.5018 84.8378 71.1187 83.3402 71.6156L82.4404 68.9041C83.3402 71.6156 83.3392 71.616 83.3381 71.6163L83.3265 71.6201C83.3197 71.6224 83.3106 71.6254 83.2993 71.6291C83.2766 71.6365 83.245 71.6467 83.2046 71.6596C83.1239 71.6855 83.0081 71.7221 82.8586 71.7682C82.5596 71.8604 82.1257 71.9906 81.5683 72.1483C80.4539 72.4636 78.8438 72.8896 76.829 73.343C72.8032 74.2489 67.1405 75.269 60.5723 75.7287C47.4941 76.6442 30.5047 75.3595 15.7562 66.1705C14.417 65.3362 14.0078 63.5742 14.8422 62.235" fill="#FE74A6"/>
                 </svg>    
             </div>
+            <!-- icons menu -->
+            <div class="w-[32px] sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32" fill="none">
+                    <mask id="mask0_409_253" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                        <rect width="32" height="32" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_409_253)">
+                        <path d="M4 24V21.3333H28V24H4ZM4 17.3333V14.6667H28V17.3333H4ZM4 10.6667V8H28V10.6667H4Z" fill="#1C1B1F"/>
+                    </g>
+                </svg>
+            </div>
             <!-- list menu -->
-            <div class="flex flex-grow font-bebas text-2xl text-center gap-4 justify-end items-center md:flex-row md:gap-10">
+            <div class="hidden sm:flex flex-grow font-bebas text-2xl text-center gap-4 justify-end items-center md:flex-row md:gap-10">
                 <a class="text-req-black hover:bg-req-black hover:text-white p-4" href="#jumbotron">Home</a>
                 <a class="text-req-black hover:bg-req-black hover:text-white p-4" href="#tools">Tools</a>
                 <a class="text-req-black hover:bg-req-black hover:text-white p-4" href="#projects">Projects</a>
