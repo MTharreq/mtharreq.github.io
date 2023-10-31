@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="px-4 lg:py-4 flex justify-between py-4 lg:px-8">
+    <nav class="flex justify-between px-4 py-4 lg:px-8 lg:py-4">
       <!-- icons -->
       <div class="w-[32px] lg:w-[64px]">
         <svg
@@ -95,20 +95,20 @@
       </div>
       <!-- list menu -->
       <div
-        class="hidden sm:flex flex-grow font-bebas text-2xl text-center gap-4 justify-end items-center md:flex-row md:gap-10"
+        class="hidden flex-grow items-center justify-end gap-4 text-center font-bebas text-2xl sm:flex md:flex-row md:gap-10"
       >
         <a
-          class="text-req-black hover:bg-req-black hover:text-white p-4"
+          class="p-4 text-req-black hover:bg-req-black hover:text-white"
           href="#jumbotron"
           >Home</a
         >
         <a
-          class="text-req-black hover:bg-req-black hover:text-white p-4"
+          class="p-4 text-req-black hover:bg-req-black hover:text-white"
           href="#tools"
           >Tools</a
         >
         <a
-          class="text-req-black hover:bg-req-black hover:text-white p-4"
+          class="p-4 text-req-black hover:bg-req-black hover:text-white"
           href="#projects"
           >Projects</a
         >
@@ -117,29 +117,29 @@
 
     <!-- JUMBOTRON -->
     <section
-      class="h-screen flex justify-center items-center flex-col"
+      class="flex h-screen flex-col items-center justify-center"
       id="jumbotron"
     >
-      <div class="flex flex-col gap-4 h-fit w-full">
+      <div class="flex h-fit w-full flex-col gap-4">
         <div
-          class="w-full flex flex-col justify-center md:gap-4 md:flex-row lg:gap-6"
+          class="flex w-full flex-col justify-center md:flex-row md:gap-4 lg:gap-6"
         >
           <div class="flex flex-row self-center" id="first-title">
             <span
-              class="text-req-black text-7xl md:text-8xl lg:text-9xl hidden"
+              class="hidden text-7xl text-req-black md:text-8xl lg:text-9xl"
             ></span>
             <!-- FIRST TITLE (GENERATE BY JS)-->
           </div>
-          <div class="px-2 w-fit flex flex-row self-center" id="highlighter">
+          <div class="flex w-fit flex-row self-center px-2" id="highlighter">
             <!-- LAST TITLE (GENERATE BY JS)-->
           </div>
         </div>
 
         <div
-          class="flex flex-col self-center gap-4 px-8 sm:px-20 md:px-16 lg:w-[60rem]"
+          class="flex flex-col gap-4 self-center px-8 sm:px-20 md:px-16 lg:w-[60rem]"
         >
           <p
-            class="font-archivo hidden sm:block sm:text-xl text-justify sm:text-left"
+            class="hidden text-justify font-archivo sm:block sm:text-left sm:text-xl"
           >
             My name is <span class="italic">Muhammad Tharreq</span>, and I am a
             Computer Engineering student with a keen interest in the field of
@@ -149,13 +149,13 @@
             various organizations before.
           </p>
           <p
-            class="font-archivo block sm:hidden sm:text-xl text-justify sm:text-left"
+            class="block text-justify font-archivo sm:hidden sm:text-left sm:text-xl"
           >
             My name is <span class="italic">Muhammad Tharreq</span>, a computer
             engineering student with a passion for graphic design and a track
             record in committee work and organizations.
           </p>
-          <div class="flex justify-between w-full">
+          <div class="flex w-full justify-between">
             <!-- LINKEDIN -->
             <a
               target="_blank"
@@ -262,11 +262,11 @@
 
     <!-- COLOR PALLATE -->
     <section>
-      <ul class="flex flex-row w-full">
+      <ul class="flex w-full flex-row">
         <li
           onclick="copyText('hex1')"
           id="hex1"
-          class="cursor-pointer text-md font-bebas text-center font-normal w-full pt-2 pb-1 sm:pt-3 sm:pb-2 sm:text-2xl lg:pt-4 lg:pb-3 lg:text-4xl bg-req-blue-50 hover:bg-req-blue-50/80"
+          class="text-md w-full cursor-pointer bg-req-blue-50 pb-1 pt-2 text-center font-bebas font-normal hover:bg-req-blue-50/80 sm:pb-2 sm:pt-3 sm:text-2xl lg:pb-3 lg:pt-4 lg:text-4xl"
         >
           #5B6DFF
         </li>
@@ -274,7 +274,7 @@
         <li
           onclick="copyText('hex2')"
           id="hex2"
-          class="cursor-pointer text-md font-bebas text-center font-normal w-full pt-2 pb-1 sm:pt-3 sm:pb-2 sm:text-2xl lg:pt-4 lg:pb-3 lg:text-4xl bg-req-green-50 hover:bg-req-green-50/80"
+          class="text-md w-full cursor-pointer bg-req-green-50 pb-1 pt-2 text-center font-bebas font-normal hover:bg-req-green-50/80 sm:pb-2 sm:pt-3 sm:text-2xl lg:pb-3 lg:pt-4 lg:text-4xl"
         >
           #3DC39B
         </li>
@@ -282,7 +282,7 @@
         <li
           onclick="copyText('hex3')"
           id="hex3"
-          class="cursor-pointer text-md font-bebas text-center font-normal w-full pt-2 pb-1 sm:pt-3 sm:pb-2 sm:text-2xl lg:pt-4 lg:pb-3 lg:text-4xl bg-req-purple-50 hover:bg-req-purple-50/80"
+          class="text-md w-full cursor-pointer bg-req-purple-50 pb-1 pt-2 text-center font-bebas font-normal hover:bg-req-purple-50/80 sm:pb-2 sm:pt-3 sm:text-2xl lg:pb-3 lg:pt-4 lg:text-4xl"
         >
           #928CF8
         </li>
@@ -290,7 +290,7 @@
         <li
           onclick="copyText('hex4')"
           id="hex4"
-          class="cursor-pointer text-md font-bebas text-center font-normal w-full pt-2 pb-1 sm:pt-3 sm:pb-2 sm:text-2xl lg:pt-4 lg:pb-3 lg:text-4xl bg-req-yellow-50 hover:bg-req-yellow-50/80"
+          class="text-md w-full cursor-pointer bg-req-yellow-50 pb-1 pt-2 text-center font-bebas font-normal hover:bg-req-yellow-50/80 sm:pb-2 sm:pt-3 sm:text-2xl lg:pb-3 lg:pt-4 lg:text-4xl"
         >
           #FCC526
         </li>
@@ -298,7 +298,7 @@
         <li
           onclick="copyText('hex5')"
           id="hex5"
-          class="cursor-pointer text-md font-bebas text-center font-normal w-full pt-2 pb-1 sm:pt-3 sm:pb-2 sm:text-2xl lg:pt-4 lg:pb-3 lg:text-4xl bg-req-pink-50 hover:bg-req-pink-50/80"
+          class="text-md w-full cursor-pointer bg-req-pink-50 pb-1 pt-2 text-center font-bebas font-normal hover:bg-req-pink-50/80 sm:pb-2 sm:pt-3 sm:text-2xl lg:pb-3 lg:pt-4 lg:text-4xl"
         >
           #FE74A6
         </li>
@@ -307,18 +307,18 @@
 
     <!-- TOOLS & EXPERIENCE -->
     <section
-      class="flex flex-col gap-8 justify-center items-center py-[4rem] bg-req-black lg:gap-20 lg:py-[10rem]"
+      class="flex flex-col items-center justify-center gap-8 bg-req-black py-[4rem] lg:gap-20 lg:py-[10rem]"
       id="tools"
     >
-      <h1 class="text-3xl text-req-white text-center lg:text-6xl">
+      <h1 class="text-center text-3xl text-req-white lg:text-6xl">
         <span id="word1" class="font-archivo font-bold">Tools</span>
         <span id="word2" class="font-poppins font-light">&</span>
         <span id="word3" class="font-ibm font-bold">Experience</span>
       </h1>
-      <ul class="flex flex-col gap-8 md:gap-0 md:flex-row lg:gap-20">
+      <ul class="flex flex-col gap-8 md:flex-row md:gap-0 lg:gap-20">
         <!-- FIGMA -->
         <li
-          class="flex flex-col gap-2 md:w-40 lg:w-[12.5rem] items-center lg:gap-4"
+          class="flex flex-col items-center gap-2 md:w-40 lg:w-[12.5rem] lg:gap-4"
         >
           <div class="w-20 lg:w-28">
             <svg
@@ -335,14 +335,14 @@
             </svg>
           </div>
           <h2
-            class="text-req-white text-xl font-archivo font-bold text-center lg:text-2xl"
+            class="text-center font-archivo text-xl font-bold text-req-white lg:text-2xl"
           >
             Figma
           </h2>
         </li>
         <!-- ILLUSTRATOR -->
         <li
-          class="flex flex-col gap-2 md:w-40 lg:w-[12.5rem] items-center lg:gap-4"
+          class="flex flex-col items-center gap-2 md:w-40 lg:w-[12.5rem] lg:gap-4"
         >
           <div class="w-20 lg:w-28">
             <svg
@@ -368,14 +368,14 @@
             </svg>
           </div>
           <h2
-            class="text-req-white text-xl font-archivo font-bold text-center lg:text-2xl"
+            class="text-center font-archivo text-xl font-bold text-req-white lg:text-2xl"
           >
             Illustrator
           </h2>
         </li>
         <!-- REACT -->
         <li
-          class="flex flex-col gap-2 md:w-40 lg:w-[12.5rem] items-center lg:gap-4"
+          class="flex flex-col items-center gap-2 md:w-40 lg:w-[12.5rem] lg:gap-4"
         >
           <div class="w-20 lg:w-28">
             <svg
@@ -400,14 +400,14 @@
             </svg>
           </div>
           <h2
-            class="text-req-white text-xl font-archivo font-bold text-center lg:text-2xl"
+            class="text-center font-archivo text-xl font-bold text-req-white lg:text-2xl"
           >
             React
           </h2>
         </li>
         <!-- TAILWIND -->
         <li
-          class="flex flex-col gap-2 md:w-40 lg:w-[12.5rem] items-center lg:gap-4"
+          class="flex flex-col items-center gap-2 md:w-40 lg:w-[12.5rem] lg:gap-4"
         >
           <div class="w-20 lg:w-28">
             <svg
@@ -426,7 +426,7 @@
             </svg>
           </div>
           <h2
-            class="text-req-white text-xl font-archivo font-bold text-center lg:text-2xl"
+            class="text-center font-archivo text-xl font-bold text-req-white lg:text-2xl"
           >
             Tailwind
           </h2>
@@ -436,40 +436,40 @@
 
     <!-- SELECTED PROJECTS -->
     <section
-      class="flex flex-col gap-2 py-20 px-4 md:px-10lg:px-10 xl:px-40 lg:gap-6 lg:py-40"
+      class="md:px-10lg:px-10 flex flex-col gap-2 px-4 py-20 lg:gap-6 lg:py-40 xl:px-40"
       id="projects"
     >
       <!-- TITLE -->
       <div
-        class="w-full self-center border-4 border-req-black pt-2 pb-1.5 font-bebas text-3xl text-center lg:text-6xl lg:pt-4 lg:border-[6px]"
+        class="w-full self-center border-4 border-req-black pb-1.5 pt-2 text-center font-bebas text-3xl lg:border-[6px] lg:pt-4 lg:text-6xl"
         id="projectHeading"
       >
         Selected Projects
       </div>
 
       <!-- PROJECTS -->
-      <div class="grid grid-cols-1 gap-2 xl:grid-cols-2 lg:gap-6">
+      <div class="grid grid-cols-1 gap-2 lg:gap-6 xl:grid-cols-2">
         <!-- PROJECT 1 -->
         <div class="flex gap-2 lg:gap-6">
           <!-- Image -->
           <div class="w-full">
             <div
               style="background-image: url(./assets/img/projects/project1.png)"
-              class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"
+              class="h-[200px] border-4 border-req-black bg-cover bg-center lg:h-[350px] lg:min-w-[300px] lg:border-[6px]"
             ></div>
           </div>
           <!-- Desc -->
-          <div class="w-full flex flex-col" id="projectColor1">
+          <div class="flex w-full flex-col" id="projectColor1">
             <div
-              class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]"
+              class="h-full border-4 border-req-black bg-inherit p-2 lg:border-[6px] lg:p-4"
             >
               <h1
-                class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl"
+                class="mb-2 line-clamp-1 font-ibm text-2xl font-bold tracking-tighter lg:text-3xl"
               >
                 iSmile Laboratory Website Practicum
               </h1>
               <p
-                class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl"
+                class="line-clamp-4 text-left font-archivo text-sm leading-tight lg:line-clamp-6 lg:text-xl"
               >
                 The iSmile Laboratory website is designed to assist students in
                 conducting laboratory experiments by providing detailed
@@ -479,7 +479,7 @@
             </div>
             <div class="h-4 bg-white lg:h-6"></div>
             <div
-              class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]"
+              class="flex items-center justify-between border-4 border-req-black bg-inherit px-2 font-bebas text-xl lg:border-[6px] lg:px-4 lg:py-1 lg:text-3xl"
             >
               <p class="pt-1">More</p>
               <div class="w-7">
@@ -515,24 +515,24 @@
         <!-- PROJECT 2 -->
         <div class="flex gap-2 lg:gap-6">
           <!-- Image -->
-          <div class="w-full order-last lg:order-first">
+          <div class="order-last w-full lg:order-first">
             <div
               style="background-image: url(./assets/img/projects/project2.png)"
-              class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"
+              class="h-[200px] border-4 border-req-black bg-cover bg-center lg:h-[350px] lg:min-w-[300px] lg:border-[6px]"
             ></div>
           </div>
           <!-- Desc -->
-          <div class="w-full flex flex-col" id="projectColor2">
+          <div class="flex w-full flex-col" id="projectColor2">
             <div
-              class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]"
+              class="h-full border-4 border-req-black bg-inherit p-2 lg:border-[6px] lg:p-4"
             >
               <h1
-                class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl"
+                class="mb-2 line-clamp-1 font-ibm text-2xl font-bold tracking-tighter lg:text-3xl"
               >
                 KTM Tracker
               </h1>
               <p
-                class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl"
+                class="line-clamp-4 text-left font-archivo text-sm leading-tight lg:line-clamp-6 lg:text-xl"
               >
                 The KTM Tracker application, developed during a research group
                 project by Seculab Laboratory, is a tool designed to identify
@@ -542,7 +542,7 @@
             </div>
             <div class="h-4 bg-white lg:h-6"></div>
             <div
-              class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]"
+              class="flex items-center justify-between border-4 border-req-black bg-inherit px-2 font-bebas text-xl lg:border-[6px] lg:px-4 lg:py-1 lg:text-3xl"
             >
               <p class="pt-1">More</p>
               <div class="w-7">
@@ -581,21 +581,21 @@
           <div class="w-full">
             <div
               style="background-image: url(./assets/img/projects/project3.png)"
-              class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"
+              class="h-[200px] border-4 border-req-black bg-cover bg-center lg:h-[350px] lg:min-w-[300px] lg:border-[6px]"
             ></div>
           </div>
           <!-- Desc -->
-          <div class="w-full flex flex-col" id="projectColor3">
+          <div class="flex w-full flex-col" id="projectColor3">
             <div
-              class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]"
+              class="h-full border-4 border-req-black bg-inherit p-2 lg:border-[6px] lg:p-4"
             >
               <h1
-                class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl"
+                class="mb-2 line-clamp-1 font-ibm text-2xl font-bold tracking-tighter lg:text-3xl"
               >
                 AMICAT
               </h1>
               <p
-                class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl"
+                class="line-clamp-4 text-left font-archivo text-sm leading-tight lg:line-clamp-6 lg:text-xl"
               >
                 UI/UX Design application created for the CENTURION 2023
                 competition, is a platform designed for finding online gaming
@@ -606,7 +606,7 @@
             </div>
             <div class="h-4 bg-white lg:h-6"></div>
             <div
-              class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]"
+              class="flex items-center justify-between border-4 border-req-black bg-inherit px-2 font-bebas text-xl lg:border-[6px] lg:px-4 lg:py-1 lg:text-3xl"
             >
               <p class="pt-1">More</p>
               <div class="w-7">
@@ -642,24 +642,24 @@
         <!-- PROJECT 4 -->
         <div class="flex gap-2 lg:gap-6">
           <!-- Image -->
-          <div class="w-full order-last lg:order-first">
+          <div class="order-last w-full lg:order-first">
             <div
               style="background-image: url(./assets/img/projects/project4.png)"
-              class="h-[200px] bg-cover bg-center border-4 lg:h-[350px] lg:min-w-[300px] border-req-black lg:border-[6px]"
+              class="h-[200px] border-4 border-req-black bg-cover bg-center lg:h-[350px] lg:min-w-[300px] lg:border-[6px]"
             ></div>
           </div>
           <!-- Desc -->
-          <div class="w-full flex flex-col" id="projectColor4">
+          <div class="flex w-full flex-col" id="projectColor4">
             <div
-              class="h-full bg-inherit border-4 border-req-black p-2 lg:p-4 lg:border-[6px]"
+              class="h-full border-4 border-req-black bg-inherit p-2 lg:border-[6px] lg:p-4"
             >
               <h1
-                class="font-ibm text-2xl font-bold tracking-tighter mb-2 line-clamp-1 lg:text-3xl"
+                class="mb-2 line-clamp-1 font-ibm text-2xl font-bold tracking-tighter lg:text-3xl"
               >
                 Greenvfo
               </h1>
               <p
-                class="font-archivo text-sm text-left leading-tight line-clamp-4 lg:line-clamp-6 lg:text-xl"
+                class="line-clamp-4 text-left font-archivo text-sm leading-tight lg:line-clamp-6 lg:text-xl"
               >
                 Greenvfo, developed for participation in the INNOPA 2023
                 competition, is an application designed for mapping flora
@@ -670,7 +670,7 @@
             </div>
             <div class="h-4 bg-white lg:h-6"></div>
             <div
-              class="border-4 border-req-black px-2 bg-inherit font-bebas text-xl flex justify-between items-center lg:px-4 lg:py-1 lg:text-3xl lg:border-[6px]"
+              class="flex items-center justify-between border-4 border-req-black bg-inherit px-2 font-bebas text-xl lg:border-[6px] lg:px-4 lg:py-1 lg:text-3xl"
             >
               <p class="pt-1">More</p>
               <div class="w-7">
@@ -708,10 +708,10 @@
 
     <!-- FOOTER -->
     <section
-      class="bg-req-black flex flex-col justify-center pt-10 pb-5 gap-10 lg:pt-30"
+      class="lg:pt-30 flex flex-col justify-center gap-10 bg-req-black pb-5 pt-10"
     >
       <div
-        class="flex flex-col font-ibm text-xl text-center gap-4 justify-center md:flex-row md:gap-10"
+        class="flex flex-col justify-center gap-4 text-center font-ibm text-xl md:flex-row md:gap-10"
       >
         <a class="text-gray-500 hover:text-req-white" href="#jumbotron">Home</a>
         <a class="text-gray-500 hover:text-req-white" href="#tools">Tools</a>
@@ -719,7 +719,7 @@
           >Projects</a
         >
       </div>
-      <div class="w-[32px] m-auto">
+      <div class="m-auto w-[32px]">
         <svg
           width="100%"
           height="100%"
