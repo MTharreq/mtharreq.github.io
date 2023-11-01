@@ -986,6 +986,11 @@ video {
   color: rgb(29 29 29 / var(--tw-text-opacity));
 }
 
+.text-req-blue-50 {
+  --tw-text-opacity: 1;
+  color: rgb(91 109 255 / var(--tw-text-opacity));
+}
+
 .text-req-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1028,6 +1033,10 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:block {
+  display: block;
 }
 
 @media (min-width: 640px) {
